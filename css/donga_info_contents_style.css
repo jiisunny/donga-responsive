@@ -125,7 +125,6 @@
           color: #00a0c9;
           font-weight: 700;
         }
-        .cell_text > p{}
         .cell_text > p.first{
           font-weight: 700;
           font-size: 20px;
@@ -225,12 +224,10 @@
           .description > div.active{
             display: block;
           }
-            /**** 연혁 탭바 ***************/
-            #history_tabbar ul{}
+            /** 연혁 탭바 **/
               #history_tabbar ul > li{
                 margin-top: 50px;
               }
-                #history_tabbar dl{}
                   #history_tabbar dl > dt{
                     color: #00a0c9;
                     font-weight: 700;
@@ -301,8 +298,6 @@
             }
             }
             /** 지점 (3번째 탭내용) **/
-            #location_tabbar ul{}
-              #location_tabbar ul > li{}
                 #location_tabbar ul > li > dl{
                   border-top: 1px solid #d9d9d9;
                   overflow: hidden;
@@ -366,8 +361,6 @@
               font-size: 20px;
               margin-bottom: 20px;
             }
-
-            .co_symbol > ul{}
               .co_symbol > ul > li{
                 margin-bottom: 10px;
               }
