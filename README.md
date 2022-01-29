@@ -1,12 +1,12 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](#)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9f2f756f-e1fc-48d9-9c07-b7d7433d8aaa/deploy-status)](https://app.netlify.com/sites/condescending-hawking-86359e/deploys)
 
 # 동아제약 👩🏻‍⚕️💊
 
 동아제약 반응형 페이지 제작
 
-[동아제약 반응형 페이지](#)
+[동아제약 반응형 페이지](https://condescending-hawking-86359e.netlify.app/)
 
-[동아제약 서브페이지 - 동아제약소개](#)
+[동아제약 서브페이지 - 동아제약소개](https://condescending-hawking-86359e.netlify.app/donga_info.html)
 
 ![동아제약](https://raw.githubusercontent.com/jiisunny/donga-responsive/master/_assets/main_screenshot.png)
 
