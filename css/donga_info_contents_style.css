@@ -23,7 +23,7 @@
       line-height: 150px;
       font-size: 40px;
       font-weight: 700;
-      color: #595959;
+      color: #00a0c9;
       text-align: center;
     }
     @media screen and ( max-width: 1366px){
@@ -48,6 +48,7 @@
         background-position: 48px 23px;
         padding: 0 100px;
         position: relative;
+        border-bottom: 1px solid #00a0c9;
       }
         label.cell_title::before,
         label.cell_title::after{

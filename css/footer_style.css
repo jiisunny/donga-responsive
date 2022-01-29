@@ -4,6 +4,7 @@
   width: 100%;
   background: #f6f6f6;
 }
+  /* pc */
   @media screen and ( min-width: 1367px){
   #main_footer > div{
     width: 960px;
@@ -42,9 +43,6 @@
             margin-top: 40px;
           }
           #family_site > ul > li > dl > dd{
-            /**
-            padding-left: 20px;
-            **/
             padding-top: 5px;
             line-height: 30px;
           }
@@ -56,29 +54,110 @@
           height: 31px;
           line-height: 31px;
         }
-  }
-  @media screen and ( max-width: 1366px){
-  #family_site,
-  #brand_site{ display: none;}
-  }
-
-  #policy{
-    padding-top: 46px;
-    padding-bottom: 33px;
+  #policy {
+    padding: 60px 0 30px 0;
     border-bottom: 1px solid #e7e7e7;
   }
-    #policy > ul{
+    #policy > ul {
       width: 100%;
     }
-  @media screen and ( max-width: 767px){
-  #policy{
-    padding-top: 26px;
-    padding-bottom: 13px;
-  }
-    #policy > ul{
-      text-align: center;
+    #wa{
+      float: right;
+      margin: 15px 80px 0 0;
+    }
+    #f_bottom{
+      overflow: hidden;
+      padding: 60px 0;
+    }
+    #f_bottom > address{
+      float: left;
+      width: 416px;
+      margin-left: 28px;
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 23px;
+    }
+    #f_logo{
+      float: left;
+      margin-top: 31px;
     }
   }
+
+  /* tablet */
+  @media screen and ( max-width: 1366px){
+    #family_site,
+    #brand_site{
+      display: none;
+    }
+    #policy{
+      padding: 45px 0 33px 96px;;
+      border-bottom: 1px solid #e7e7e7;
+      border-top: 1px solid #e7e7e7;
+    }
+      #policy > ul{
+        width: 100%;
+      }
+      #wa{
+        float: right;
+        margin: 15px 80px 0 0;
+      }
+      #f_bottom{
+        overflow: hidden;
+        padding: 10px 0 60px 100px;
+      }
+      #f_bottom > address{
+        float: left;
+        width: 416px;
+        margin-left: 28px;
+        font-size: 16px;
+        line-height: 25px;
+        margin-top: 23px;
+      }
+      #f_logo{
+        float: left;
+        margin-top: 31px;
+      }
+    }
+
+  /* mobile */
+  @media screen and ( max-width: 767px){
+    #policy{
+      padding: 30px 0 20px 0;
+    }
+      #policy > ul{
+        text-align: center;
+      }
+          #policy > ul > li > a{
+            display: inline-block;
+            font-size: 16px;
+          }
+      #f_bottom{
+        padding-bottom: 40px;
+      }
+      #f_logo,
+      #f_bottom > address,
+      #wa{
+        width: 48px;
+        float: unset;
+        margin-left: auto; margin-right: auto;
+        text-align: center;
+      }
+      #f_logo{ width: 84px;}
+      #f_bottom > address{ width: 100%;}
+      #f_bottom{
+        overflow: hidden;
+        padding: 30px 20px;
+      }
+      #f_logo{
+        margin-top: 31px;
+      }
+      #f_bottom > address{
+        font-size: 14px;
+        line-height: 25px;
+        margin-top: 23px;
+      }
+  }
+
       #policy > ul > li{
         display: inline-block;
         margin-right: 13px;
@@ -106,49 +185,9 @@
           #policy > ul > li:last-child > a{
             padding-right: 0;
           }
-  #f_bottom{
-    overflow: hidden;
-    padding-bottom: 60px;
-  }
-  @media screen and ( max-width: 767px){
-  #f_bottom{
-    padding-bottom: 40px;
-  }
-  }
-    #f_logo{
-      float: left;
-      margin-top: 31px;
-    }
-
-    #f_bottom > address{
-      float: left;
-      width: 416px;
-      margin-left: 28px;
-      font-size: 16px;
-      line-height: 25px;
-      margin-top: 23px;
-    }
       #f_bottom > address > span{
         display: block;
       }
         #f_bottom > address > span > a{
           display: inline;
         }
-
-    #wa{
-      float: right;
-      margin-top: 15px;
-    }
-
-    @media screen and ( max-width: 767px){
-    #f_logo,
-    #f_bottom > address,
-    #wa{
-      float: unset;
-      margin-left: auto; margin-right: auto;
-      text-align: center;
-    }
-    #f_logo{ width: 84px;}
-    #f_bottom > address{ width: 100%;}
-    #wa{ width: 48px;}
-    }

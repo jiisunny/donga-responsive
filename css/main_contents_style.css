@@ -53,7 +53,21 @@
     #visual_image > a.more{ bottom: 50px;}
     }
     @media screen and ( max-width: 767px){
-    #visual_image > a.more{ bottom: 40px;}
+      #visual_image > a.more{
+        color: #fff;
+        position: absolute;
+        left: 50%; bottom: 40px;
+        margin-left: -125px;
+      }
+      a.more{
+        width: 250px; height: 70px;
+        box-sizing: border-box;
+        border: 1px solid #fff;
+        padding-left: 30px; line-height: 70px;
+        font-size: 19px;
+        text-decoration: none;
+        background: url(../images/arrow_white.png) no-repeat 180px 50%;
+      }
     }
 
     @media screen and ( min-width: 1367px){
@@ -69,6 +83,8 @@
     padding-top: 87px;
     padding-bottom: 130px;
   }
+
+  /* tablet */
   @media screen and ( max-width: 1366px){
   #product{
     padding-top: 80px;
@@ -112,6 +128,7 @@
       margin-bottom: 60px;
       overflow: hidden;
     }
+
     @media screen and ( max-width: 1366px){
     #product > ul{
       margin-top: 10px;
@@ -174,10 +191,26 @@
       }
       }
       @media screen and ( max-width: 767px){
-      #product > ul > li{
-        width: 50%;
-      }
-      }
+        h2.title{
+          width: 100%;
+          font-weight: 700;
+          font-size: 1.2em;
+          text-align: center;
+          color: #00a0c9;
+        }
+        #product{
+          padding-top: 80px;
+          padding-bottom: 100px;
+        }
+          #product > ul{
+            margin-top: 68px;
+            margin-bottom: 30px;
+            overflow: hidden;
+          }
+            #product > ul > li{
+              width: 50%;
+            }
+            }
         #product > ul > li > a,
         #product > ul > li > a > img{
           width: 100%;
@@ -195,48 +228,57 @@
       color: #fff;
     }
     }
+
   /**** 사회공헌 ****/
   #social{
     margin-bottom: 60px;
   }
     #social > h2.title{ position: relative;}
     #social > img{ width: 100%;}
+    /* pc */
     @media screen and ( min-width: 1367px){
-    #social > h2.title{
-      height: 180px;
-      line-height: 180px;
+      #social > h2.title{
+        height: 180px;
+        line-height: 180px;
+      }
+      #social > img.pc{ 
+        display: block;
+        margin-top: -180px;
+      }
+      #social > img.tablet{ display: none;}
+      #social > img.smart{ display: none;}
     }
-    #social > img.pc{ 
-      display: block;
-      margin-top: -180px;
-    }
-    #social > img.tablet{ display: none;}
-    #social > img.smart{ display: none;}
-    }
+
+    /* tablet */
     @media screen and ( min-width: 768px) and ( max-width: 1366px){
-    #social > h2.title{
-      height: 70px;
-      line-height: 70px;
+      #social > h2.title{
+        height: 70px;
+        line-height: 70px;
+      }
+      #social > img.pc{ display: none;}
+      #social > img.tablet{
+        display: block;
+        margin-top: -70px;
+      }
+      #social > img.smart{ display: none;}
     }
-    #social > img.pc{ display: none;}
-    #social > img.tablet{
-      display: block;
-      margin-top: -70px;
-    }
-    #social > img.smart{ display: none;}
-    }
+
+    /* mobile */
     @media screen and ( max-width: 767px){
-    #social > h2.title{
-      height: 60px;
-      line-height: 60px;
+      #social > h2.title{
+        height: 60px;
+        line-height: 60px;
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+      #social > img.pc{ display: none;}
+      #social > img.tablet{ display: none;}
+      #social > img.smart{
+        margin-top: -60px;
+        display: block;
+      }
     }
-    #social > img.pc{ display: none;}
-    #social > img.tablet{ display: none;}
-    #social > img.smart{
-      margin-top: -60px;
-      display: block;
-    }
-    }
+
   /**** 역사관 ****/
   @media screen and ( min-width: 1367px){
   #history{
@@ -273,14 +315,26 @@
       @media screen and ( max-width: 767px){
         #history > h2.title{
           line-height: 30px;
-          margin-top: 20px; 
+          margin-top: 20px;
+          font-size: 1.2em;
+          letter-spacing: 3px;
+          line-height: 80px;
+        }
+        #history > hgroup{
+          text-align: center;
+          margin-bottom: 40px;
+          padding: 0 40px;
         }
         #history > hgroup > h1{
           line-height: 50px;
           margin-bottom: 20px;
         }
-        #history > hgroup > h2,
-        #history > hgroup > p{ display: none;}
+        #history > hgroup > p{
+          font-size: 14px;
+          color: #494949;
+          font-weight: 700;
+          line-height: 18px;
+        }
       }
     /** 국토대장정 포스터 스타일적용**/
     /**
