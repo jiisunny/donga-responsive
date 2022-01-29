@@ -1,0 +1,416 @@
+/* donga_info_contents_style.css */
+
+#container{
+  width: 100%; 
+  background: #f6f6f6;
+  margin-top: 110px;
+}
+@media screen and ( max-width: 767px){
+#container{ margin-top: 70px;}
+}
+  #container > div{
+    width:1522px;
+    margin: 0 auto;
+  }
+  @media screen and ( max-width: 1521px){
+  #container > div{
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  }
+    #container h1.title{
+      height: 150px;
+      line-height: 150px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #595959;
+      text-align: center;
+    }
+    @media screen and ( max-width: 1366px){
+    #container h1.title{
+      text-align: center;
+    }
+    }
+
+    #container > div > section{
+      width: 90%;
+      background: #fff;
+      margin-bottom: 7px;
+      margin: 0 auto;
+    }
+    #container > div > section#locationInfo{
+      margin-bottom: 0;
+    }
+      label.cell_title{
+        height: 70px;
+        line-height: 70px;
+        background: url(../images/icon_logo.png) no-repeat;
+        background-position: 48px 23px;
+        padding: 0 100px;
+        position: relative;
+      }
+        label.cell_title::before,
+        label.cell_title::after{
+          content: "";
+          display: block;
+          width: 22px; height: 1px;
+          background: #bdbdbd;
+          position: absolute;
+          top: 35px;
+          transition-duration: 0.3s;
+        }
+        label.cell_title::before{
+          right: 84px;
+          transform: rotateZ( -45deg);
+        }
+        label.cell_title::after{
+          right: 68px;
+          transform: rotateZ( 45deg);
+        }
+        @media screen and ( max-width: 1366px){
+        label.cell_title::before{ right: 36px;}
+        label.cell_title::after{ right: 20px;}
+        }
+        #container > div > section > input:checked + label.cell_title::before{
+          transform: rotateZ( 45deg);
+        }
+        #container > div > section > input:checked + label.cell_title::after{
+          transform: rotateZ( -45deg);
+        }
+      @media screen and ( max-width: 1366px){
+      label.cell_title{
+        background-position: 20px 23px;
+        padding: 0 72px;
+        transition-duration: 0.3s;
+      }
+      }
+      .cell{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 47px 102px;
+        border-top: 2px solid #00a0c9;
+        display: none;
+        background-color: #f6f6f6;
+      }
+      #container > div > section > input[type=checkbox]:checked + label + .cell{
+        display: block;
+      }
+        .cell > figure{
+          background: #f6f6f6;
+          padding: 50px 150px;
+        }
+          .cell > figure > img{
+            width: 100%;
+          }
+      @media screen and ( max-width: 1366px){
+      .cell{ padding: 20px;}
+        .cell > figure{ padding: 0px 5px;}
+      }
+      @media screen and ( max-width: 767px){
+        .cell > figure{ display: none;}
+      }
+      .cell_text{ margin-top: 50px;}
+      @media screen and ( max-width: 767px){
+      .cell_text{ margin-top: 0;}
+      }
+
+      @media screen and ( min-width: 768px){
+      section#vision .cell_text{
+        display: none;
+      }
+      }
+        .cell_text > h2{
+          font-size: 20px;
+          color: #00a0c9;
+          font-weight: 700;
+        }
+        .cell_text > p{}
+        .cell_text > p.first{
+          font-weight: 700;
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+          .cell_text > p > strong{
+            color: #00a0c9;
+            font-weight: 700;
+          }
+        .cell_text > dl{
+          background: #f6f6f6;
+          margin: 20px 0;
+          padding: 0 10px 8px;
+        }
+          .cell_text > dl > dt{
+            padding: 10px 0;
+            font-weight: 700;
+            color: #00a0c9;
+            font-size: 20px;
+          }
+            .cell_text > dl > dt > strong{
+              font-weight: 700;
+              color: #ab8a37;
+            }
+      .cell_summary{
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        padding: 17px;
+        margin-top: 12px;
+      }
+      #donga_history .cell_summary{
+        margin-top: 47px;
+      }
+      @media screen and ( min-width: 768px){
+      .cell_summary{
+        padding-left: 123px;
+        background: url(../images/icon_logo_02.png) no-repeat;
+        background-position: 25px 50%;
+      }
+      }      
+      @media screen and ( max-width: 767px){
+      #donga_history .cell_summary{ margin-top: 0;}
+      }
+        .cell_summary > ul{ overflow: hidden;}
+          .cell_summary > ul > li{
+            float: left;
+            background: url(../images/bg_blkdot_on.gif) no-repeat;
+            background-position: 0 50%;
+            padding-left: 15px;
+            margin-right: 40px;
+          }
+            .cell_summary > ul > li > a{
+              display: inline;
+              color: #000;
+            }
+        .tab_title{
+          width: 100%;
+          margin-top: 47px;
+          border-bottom: 1px solid #bbb;
+        }
+        @media screen and ( max-width: 767px){
+        .tab_title{
+          margin-top: 0;
+        }
+        #history_tabbar .tab_title{
+          margin-top: 20px;
+        }
+        }
+          .tab_title > div{
+            display: table;
+            width: 480px;
+            border-top: 1px solid #bbb;
+            border-left: 1px solid #bbb;
+          }
+          @media screen and ( max-width: 767px){
+          .tab_title > div{
+            width: 100%;
+          }
+          }
+            .tab_title > div > h3{
+              display: table-cell;
+              border-right: 1px solid #bbb;
+              text-align: center;
+              vertical-align: middle;
+              width: 25%;
+              color: #000;
+              background: #fff;
+            }
+            #location_tabbar .tab_title > div > h3{ width: 33.33%;}
+
+            .tab_title > div > h3.active{
+              color: #fff;
+              background: #575757;
+            }
+          .description > div{
+            display: none;
+          }
+          .description > div.active{
+            display: block;
+          }
+            /**** 연혁 탭바 ***************/
+            #history_tabbar ul{}
+              #history_tabbar ul > li{
+                margin-top: 50px;
+              }
+                #history_tabbar dl{}
+                  #history_tabbar dl > dt{
+                    color: #00a0c9;
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-bottom: 12px;
+                  }
+                  #history_tabbar dl > dd{
+                    padding-left: 25px;
+                    background: url(../images/bg_blkdot_on.gif) no-repeat 15px 11px;
+                  }
+                    #history_tabbar dl > dd > span{
+                      color: #ab8a37;
+                      font-weight: 700;
+                      margin-right: 10px;
+                    }
+                #history_tabbar img{
+                  margin-left: 25px;
+                  margin-top: 10px;
+                }
+        /** 위치 탭바 **/
+        #location_tabbar .description{
+          margin-top: 50px;
+        }
+            #location_tabbar h3.location_title{
+              font-size: 20px;
+              font-weight: 700;
+              height: 50px;
+              line-height: 50px;
+              color: #00a0c9;
+            }
+              #location_tabbar > section > div > dl > dt{
+                font-weight: 700;
+              }
+              #location_tabbar > section > div > dl > dd{
+                margin: 10px;
+              }
+            @media screen and ( min-width: 768px){
+            #location_tabbar > section > div > dl{
+              width: 100%;
+              height: 50px; line-height: 50px;
+              border-top: 1px solid #d9d9d9;
+              overflow: hidden;
+            }
+              #location_tabbar > section > div > dl > dt,
+              #location_tabbar > section > div > dl > dd{
+                float: left;
+              }
+              #location_tabbar > section > div > dl > dt{
+                width: 75px;
+              }
+              #location_tabbar > section > div > dl > dt.m_l_100{
+                margin-left: 100px;
+              }
+              #location_tabbar > section > div > dl > dd{
+                margin: 0;
+              }
+            }
+                #location_tabbar > section > div > dl > dd > a{
+                  display: inline;
+                  color: #000;
+                }
+            #location_tabbar img{
+              margin-bottom: 20px;
+            }
+            @media screen and ( max-width: 767px){
+            #location_tabbar img{
+              width: 100%;
+            }
+            }
+            /** 지점 (3번째 탭내용) **/
+            #location_tabbar ul{}
+              #location_tabbar ul > li{}
+                #location_tabbar ul > li > dl{
+                  border-top: 1px solid #d9d9d9;
+                  overflow: hidden;
+                }
+                  #location_tabbar ul > li > dl > dt{
+                    float: left;
+                    width: 270px;
+                    font-weight: 700;
+                  }
+                  dd.address{
+                    float: left;
+                    width: 550px;
+                  }
+                  dd.tel{
+                    float: left;
+                    width: 300px;
+                  }
+                  dd.view{
+                    float: right;
+                    width: 120px;
+                    text-align: right;
+                  }
+                    dd.tel > a,
+                    dd.view > a{
+                      display: inline;
+                    }
+                    dd.view > a{
+                      color: #00a0c9;
+                      font-weight: 700;
+                    }
+
+    /** CI 소개 **/
+        .cell_ci strong{
+          color: #00a0c9;
+          font-weight: 700;
+        }
+          .ci_title{
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #d9d9d9;
+            font-weight: 700;
+            font-size: 20px;
+            margin: 50px 0;
+          }
+          .co_symbol{ overflow: hidden;}
+
+            @media screen and (min-width: 768px){
+            .co_symbol > img{
+              float: left;
+              margin-right: 30px;
+            }
+            }
+            @media screen and (max-width: 767px){
+            .co_symbol > img{
+              width: 100%;
+              margin-bottom: 20px;
+            }
+            }
+            .co_symbol > p{
+              font-weight: 700;
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+
+            .co_symbol > ul{}
+              .co_symbol > ul > li{
+                margin-bottom: 10px;
+              }
+                .co_symbol > ul > li > span{
+                  color: #ab8a37;
+                  font-weight: 700;
+                }
+            
+          .co_type{
+            background: url(../images/bg_logo.gif);
+            border: 2px solid #eaeaea;
+          }
+              .co_type > ul > li{
+                text-align: center;
+                margin: 20px 0;
+              }
+          @media screen and ( min-width: 768px){
+          .co_type{ width: 714px; height: 105px;}
+            .co_type > ul{
+              display: table;
+              width: 100%; height: 105px;
+              }
+              .co_type > ul > li{
+                display: table-cell;
+                vertical-align: middle;
+                margin: 0;
+              }
+          }
+                .co_type > ul > li > img{
+                  margin: 0 auto 10px;
+                }
+            .co_signature > p{
+              width: 717px;
+              text-align: right;
+            }
+            @media screen and ( max-width: 767px){
+            .co_signature > p{
+              width: 100%;
+              text-align: left;
+            }
+            .co_signature > img,
+            .co_system > img,
+            .co_info > img{
+              width: 100%;
+            }
+            }
+

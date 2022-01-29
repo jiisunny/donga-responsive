@@ -1,0 +1,154 @@
+/* footer_style.css */
+
+#main_footer{
+  width: 100%;
+  background: #f6f6f6;
+}
+  @media screen and ( min-width: 1367px){
+  #main_footer > div{
+    width: 960px;
+    margin: 0 auto;
+  }
+  #family_site,
+  #brand_site{
+    padding-top: 53px;
+  }
+    h3.f_title{
+      height: 37px;
+      line-height: 37px;
+      border-bottom: 1px solid #e7e7e7;
+      background: url(../images/bg_foot_title.png) no-repeat;
+      background-position: 139px 50%;
+      letter-spacing: 1px;
+    }
+    #family_site > ul,
+    #brand_site > ul{
+      overflow: hidden;
+    }
+      #family_site > ul > li,
+      #brand_site > ul > li{
+        float: left; 
+        width: 300px;
+        margin-right: 20px;
+        font-size: 16px;
+        letter-spacing: -1px;
+      }
+          #family_site > ul > li > dl > dt{
+            width: 100%; height: 30px;
+            line-height: 30px;
+            font-weight: 700;
+            color: #999;
+            border-bottom: 1px solid #e7e7e7;
+            margin-top: 40px;
+          }
+          #family_site > ul > li > dl > dd{
+            /**
+            padding-left: 20px;
+            **/
+            padding-top: 5px;
+            line-height: 30px;
+          }
+      #brand_site > ul > li{
+        margin-top: 18px;
+      }
+        #brand_site > ul > li > a{
+          font-weight: 700;
+          height: 31px;
+          line-height: 31px;
+        }
+  }
+  @media screen and ( max-width: 1366px){
+  #family_site,
+  #brand_site{ display: none;}
+  }
+
+  #policy{
+    padding-top: 46px;
+    padding-bottom: 33px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+    #policy > ul{
+      width: 100%;
+    }
+  @media screen and ( max-width: 767px){
+  #policy{
+    padding-top: 26px;
+    padding-bottom: 13px;
+  }
+    #policy > ul{
+      text-align: center;
+    }
+  }
+      #policy > ul > li{
+        display: inline-block;
+        margin-right: 13px;
+        line-height: 31px;
+        height: 31px;
+        position: relative;
+      }
+      #policy > ul > li:last-child{
+        margin-right: 0;
+      }
+        #policy > ul > li:first-child::after{
+          content:"";
+          display: inline-block;
+          width: 3px; height: 3px;
+          border-radius: 2px;
+          background: #000;
+
+          position: absolute;
+          right: 0; top: 50%;
+        }
+          #policy > ul > li > a{
+            display: inline-block;
+            padding-right: 23px;
+          }
+          #policy > ul > li:last-child > a{
+            padding-right: 0;
+          }
+  #f_bottom{
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
+  @media screen and ( max-width: 767px){
+  #f_bottom{
+    padding-bottom: 40px;
+  }
+  }
+    #f_logo{
+      float: left;
+      margin-top: 31px;
+    }
+
+    #f_bottom > address{
+      float: left;
+      width: 416px;
+      margin-left: 28px;
+      font-size: 16px;
+      line-height: 25px;
+      margin-top: 23px;
+    }
+      #f_bottom > address > span{
+        display: block;
+      }
+        #f_bottom > address > span > a{
+          display: inline;
+        }
+
+    #wa{
+      float: right;
+      margin-top: 15px;
+    }
+
+    @media screen and ( max-width: 767px){
+    #f_logo,
+    #f_bottom > address,
+    #wa{
+      float: unset;
+      margin-left: auto; margin-right: auto;
+      text-align: center;
+    }
+    #f_logo{ width: 84px;}
+    #f_bottom > address{ width: 100%;}
+    #wa{ width: 48px;}
+    }

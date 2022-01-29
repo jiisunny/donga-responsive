@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>동아제약</title>
+
+  <!-- 오픈 그래프(The Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="동아제약" />
+  <meta property="og:title" content="동아제약" />
+  <meta property="og:description" content="건강한 생활속에 동아제약이 함께합니다." />
+  <meta property="og:image" content="./images/donga_seo.png" />
+  <meta property="og:url" content="#" />
+
+  <!-- 트위터 카드(Twitter Cards) -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="동아제약" />
+  <meta property="twitter:title" content="동아제약" />
+  <meta property="twitter:description" content="건강한 생활속에 동아제약이 함께합니다." />
+  <meta property="twitter:image" content="./images/donga_seo.png" />
+  <meta property="twitter:url" content="#" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/swiper.css">
+
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    @media screen and ( min-width: 768px) and ( max-width: 1366px){
+    .swiper-container {
+      margin-top: 110px;
+    }
+    }
+    @media screen and ( max-width: 767px){
+    .swiper-container {
+      margin-top: 70px;
+    }
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide img{
+      width: 100%;
+    }
+    @media screen and ( min-width: 1367px){
+    .swiper-slide img.banner_pc{		display: block;}
+    .swiper-slide img.banner_tablet{	display: none;}
+    .swiper-slide img.banner_smart{		display: none;}
+    }
+    @media screen and ( min-width: 768px) and ( max-width: 1366px){
+    .swiper-slide img.banner_pc{		display: none;}
+    .swiper-slide img.banner_tablet{	display: block;}
+    .swiper-slide img.banner_smart{		display: none;}
+    }
+    @media screen and ( max-width: 767px){
+    .swiper-slide img.banner_pc{		display: none;}
+    .swiper-slide img.banner_tablet{	display: none;}
+    .swiper-slide img.banner_smart{		display: block;}
+    }
+    .swiper-pagination-bullet {
+      width: 15px;
+      height: 15px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color:#000;
+      opacity: 1;
+      background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+      color:#fff;
+      background: #00abcc;
+    }
+  </style>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/poster_slider.js"></script>
+</head>
+<body>
+
+  <div class="skip">
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- 메인메뉴1 -->
+  <script>
+  $(function(){
+    setInterval(function(){
+      if($(window).scrollTop()>=95){
+        $("#main_nav_1").css({top: 0+"px"});
+      }else{
+        $("#main_nav_1").css({top: -80+"px"});
+      }
+    },50);
+  });
+  </script>
+  <nav id="main_nav_1">
+    <ul>
+      <li class="active"><a href="donga_info.html">동아제약</a></li>
+      <li><a href="javascript:void(0)">제품소개</a></li>
+      <li><a href="javascript:void(0)">제품개발</a></li>
+      <li><a href="javascript:void(0)">사회공헌</a></li>
+      <li><a href="javascript:void(0)">고객지원</a></li>
+      <li><a href="javascript:void(0)">홍보</a></li>
+      <li><a href="javascript:void(0)">사이버감사실</a></li>
+    </ul>
+  </nav>
+
+  <header id="main_header">
+    <!-- 상단메뉴 -->
+    <nav id="top_nav">
+      <ul>
+        <!-- 언어선택1 -->
+        <li class="language1">
+          <a href="javascript:void(0)">KR</a>
+          <span>|</span>
+          <a href="javascript:void(0)">EN</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 토글버튼 - 메뉴 -->
+    <label class="toggle_menu" for="toggle_menu"><img src="images/btn_menu.png" alt="메뉴토글버튼" /></label>
+    <!-- 로고 -->
+    <h1 id="logo"><a href="index.html"><img src="images/logo_top.png" alt="동아제약" /></a></h1>
+  </header>
+  <!-- 메인메뉴2 -->
+  <input id="toggle_menu" type="checkbox" />
+  <nav id="main_nav_2">
+    <h2 class="blind">메인메뉴</h2>
+    <label class="btn_close" for="toggle_menu"><img src="images/btn_close.png" alt="메뉴닫기" /></label>
+    <ul>
+      <li class="active"><a href="donga_info.html">동아제약</a></li>
+      <li><a href="javascript:void(0)">제품소개</a></li>
+      <li><a href="javascript:void(0)">제품개발</a></li>
+      <li><a href="javascript:void(0)">사회공헌</a></li>
+      <li><a href="javascript:void(0)">고객지원</a></li>
+      <li><a href="javascript:void(0)">홍보</a></li>
+      <li><a href="javascript:void(0)">사이버감사실</a></li>
+    </ul>
+    <div id="language2">
+      <a href="javascript:void(0)">KR</a>
+      <span>|</span>
+      <a href="javascript:void(0)">EN</a>
+    </div>
+
+    <div class="menu_bg"></div>
+  </nav>
+
+  <!-- 배너슬라이더 -->
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="banner_pc" src="images/img01.jpg" alt="풀려라, 5천만 풀려라, 피로! 대한민국 피로회복제 박카스!" />
+        <img class="banner_tablet" src="images/img01_t.jpg" alt="풀려라, 5천만 풀려라, 피로! 대한민국 피로회복제 박카스!" />
+        <img class="banner_smart" src="images/img01_m.jpg" alt="풀려라, 5천만 풀려라, 피로! 대한민국 피로회복제 박카스!" />
+      </div>
+      <div class="swiper-slide">
+        <img class="banner_pc" src="images/img02.jpg" alt="잠깐! 가그린은 색소가 들어있지 않습니다" />
+        <img class="banner_tablet" src="images/img02_t.jpg" alt="잠깐! 가그린은 색소가 들어있지 않습니다" />
+        <img class="banner_smart" src="images/img02_m.jpg" alt="잠깐! 가그린은 색소가 들어있지 않습니다" />
+      </div>
+      <div class="swiper-slide">
+        <img class="banner_pc" src="images/img03.jpg" alt="정신에서도 육체에서도 그대는 영웅이다 그대는 산위에 섰다" />
+        <img class="banner_tablet" src="images/img03_t.jpg" alt="정신에서도 육체에서도 그대는 영웅이다 그대는 산위에 섰다" />
+        <img class="banner_smart" src="images/img03_m.jpg" alt="정신에서도 육체에서도 그대는 영웅이다 그대는 산위에 섰다" />
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + '</span>';
+      },
+    },
+  });
+  </script>
+  <!-- //배너슬라이더 -->
+
+  <!-- 콘텐츠 영역 -->
+  <div id="container">
+    <!-- 동아제약 비주얼이미지 -->
+    <div id="visual_image">
+      <div class="blind">
+        <h2>동아제약</h2>
+        <h3>DONG-A PHARM</h3>
+        <p>건강한 생활, 건강한 미래 동아제약이 함께 합니다</p>
+      </div>
+
+      <a class="more">자세히 보기</a>
+    </div>
+
+    <!-- 제품소개 -->
+    <section id="product">
+      <h2 class="title">제품소개</h2>
+      <figure><img src="images/produt_img.jpg" alt="제품이미지" /></figure>
+      <ul>
+        <!--
+        <li><a href="javascript:void(0)"><img src="images/produt_bacchusD.jpg" alt="Bacchus-D" /></a></li>
+        <li><a href="javascript:void(0)"><img src="images/produt_bacchusF.jpg" alt="Bacchus-F" /></a></li>
+        <li><a href="javascript:void(0)"><img src="images/produt_bacchusA.jpg" alt="Bacchus DeCafe-a" /></a></li>
+        -->
+        <li><a href="javascript:void(0)"><img src="images/produt_benachio.jpg" alt="베나치오" /></a></li>
+        <li><a href="javascript:void(0)"><img src="images/produt_gagreen.jpg" alt="가그린" /></a></li>
+        <li><a href="javascript:void(0)"><img src="images/produt_ibong.jpg" alt="아이봉" /></a></li>
+      </ul>
+      <a class="more">자세히 보기</a>
+    </section>
+
+    <!-- 사회공헌 -->
+    <section id="social">
+      <h2 class="title">사회공헌</h2>
+      <img class="pc" src="images/visualImage.jpg" alt="국토대장정" />
+      <img class="tablet" src="images/visualImage_t.jpg" alt="국토대장정" />
+      <img class="smart" src="images/visualImage_m.jpg" alt="국토대장정" />
+    </section>
+
+    <!-- 역사관 -->
+    <section id="history">
+      <h2 class="title">동아제약 대학생 국토대장정</h2>
+      <hgroup>
+        <!--
+        <h2>동아제약 대학생 국토대장정</h2>
+        <h1>역사관</h1>
+        -->
+        <p>동아제약 대학생 국토대장정의 오랜 역사를 한눈에 확인해보세요</p>
+      </hgroup>
+      <div id="poster">
+        <div class="imgs_wrap">
+          <ul>
+            <li><a href="javascript:void(0)"><img src="images/19.jpg" alt="국토대장정 제19회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/18.jpg" alt="국토대장정 제18회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/17.jpg" alt="국토대장정 제17회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/16.jpg" alt="국토대장정 제16회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/15.jpg" alt="국토대장정 제15회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/14.jpg" alt="국토대장정 제14회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/13.jpg" alt="국토대장정 제13회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/12.jpg" alt="국토대장정 제12회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/11.jpg" alt="국토대장정 제11회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/10.jpg" alt="국토대장정 제10회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/09.jpg" alt="국토대장정 제9회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/08.jpg" alt="국토대장정 제8회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/07.jpg" alt="국토대장정 제7회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/06.jpg" alt="국토대장정 제6회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/05.jpg" alt="국토대장정 제5회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/04.jpg" alt="국토대장정 제4회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/03.jpg" alt="국토대장정 제3회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/02.jpg" alt="국토대장정 제2회" /></a></li>
+            <li><a href="javascript:void(0)"><img src="images/01.jpg" alt="국토대장정 제1회" /></a></li>
+          </ul>
+        </div>
+        <button class="btn_next"></button>
+        <button class="btn_prev"></button>
+      </div>
+    </section>
+  </div>
+
+  <!-- 푸터영역 -->
+  <footer id="main_footer">
+    <div id="family_site">
+      <h3 class="f_title">Family Site </h3>
+      <ul>
+        <li>
+          <dl>
+            <dt>지주회사</dt>
+            <dd><a href="javascript:void(0)">동아쏘시오홀딩스</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>식음료</dt>
+            <dd><a href="javascript:void(0)">동아오츠카</a></dd>
+            <dd><a href="javascript:void(0)">동천수</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>제약</dt>
+            <dd><a href="javascript:void(0)">동아ST</a></dd>
+            <dd><a href="javascript:void(0)">동아제약</a></dd>
+            <dd><a href="javascript:void(0)">에스티팜</a></dd>
+            <dd><a href="javascript:void(0)">DMB</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>물류</dt>
+            <dd><a href="javascript:void(0)">용마로지스</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>병유리</dt>
+            <dd><a href="javascript:void(0)">수석</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>기계부품</dt>
+            <dd><a href="javascript:void(0)">한국신동공업</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>정보통신</dt>
+            <dd><a href="javascript:void(0)">DA인포메이션</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>건설</dt>
+            <dd><a href="javascript:void(0)">철근종합건설</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>해외</dt>
+            <dd><a href="javascript:void(0)">Dong-A America Co.</a></dd>
+            <dd><a href="javascript:void(0)">소주동아음료유한공사</a></dd>
+            <dd><a href="javascript:void(0)">Dong-A Participacoes Ltda</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+    <div id="brand_site">
+      <h3 class="f_title">Brand Site</h3>
+      <ul>
+        <li><a href="javascript:void(0)">가그린</a></li>
+        <li><a href="javascript:void(0)">박카스</a></li>
+        <li><a href="javascript:void(0)">모닝케어</a></li>
+        <li><a href="javascript:void(0)">써큐란</a></li>
+        <li><a href="javascript:void(0)">템포</a></li>
+        <li><a href="javascript:void(0)">비겐크림톤</a></li>
+        <li><a href="javascript:void(0)">국토대장정</a></li>
+        <li><a href="javascript:void(0)">환경생명교실</a></li>
+        <li><a href="javascript:void(0)">AD CAFE</a></li>
+      </ul>
+    </div>
+    <div id="policy">
+      <ul>
+        <li><a href="javascript:void(0)">개인정보취급방침</a></li>
+        <li><a href="javascript:void(0)">인재개발원</a></li>
+      </ul>
+    </div>
+    <div id="f_bottom">
+      <h1 id="f_logo">
+        <img src="images/logo_footer.png" alt="동아제약" />
+      </h1>
+      <address>
+        <span>서울시 동대문구 천호대로 64 TEL.<a href="tel:02-920-8112">02-920-8112</a></span>
+        <span>Copytight DONG-A PHARM. All rights reserved </span>
+      </address>
+      <div id="wa"><a href="#" target="_blank"><img src="images/award.jpg" alt="WEB AWARD" /></a></div>
+    </div>
+  </footer>
+
+</body>
+</html>

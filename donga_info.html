@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>동아제약</title>
+
+  <!-- 오픈 그래프(The Open Graph protocol) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="동아제약" />
+  <meta property="og:title" content="동아제약" />
+  <meta property="og:description" content="건강한 생활속에 동아제약이 함께합니다." />
+  <meta property="og:image" content="./images/donga_seo.png" />
+  <meta property="og:url" content="#" />
+
+  <!-- 트위터 카드(Twitter Cards) -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="동아제약" />
+  <meta property="twitter:title" content="동아제약" />
+  <meta property="twitter:description" content="건강한 생활속에 동아제약이 함께합니다." />
+  <meta property="twitter:image" content="./images/donga_seo.png" />
+  <meta property="twitter:url" content="#" />
+
+  <link rel="icon" href="./favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/donga_info.css" />
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/tabbar.js"></script>
+</head>
+<body>
+
+  <div class="skip">
+    <a href="#container">본문 바로가기</a>
+  </div>
+  <!-- 메인메뉴1 -->
+  <script>
+  $(function(){
+    setInterval(function(){
+      if($(window).scrollTop()>=95){
+        $("#main_nav_1").css({top: 0+"px"});
+      }else{
+        $("#main_nav_1").css({top: -80+"px"});
+      }
+    },50);
+  });
+  </script>
+  <nav id="main_nav_1">
+    <ul>
+      <li class="active"><a href="donga_info.html">동아제약</a></li>
+      <li><a href="javascript:void(0)">제품소개</a></li>
+      <li><a href="javascript:void(0)">제품개발</a></li>
+      <li><a href="javascript:void(0)">사회공헌</a></li>
+      <li><a href="javascript:void(0)">고객지원</a></li>
+      <li><a href="javascript:void(0)">홍보</a></li>
+      <li><a href="javascript:void(0)">사이버감사실</a></li>
+    </ul>
+  </nav>
+
+  <header id="main_header">
+    <!-- 상단메뉴 -->
+    <nav id="top_nav">
+      <ul>
+        <!-- 언어선택1 -->
+        <li class="language1">
+          <a href="javascript:void(0)">KR</a>
+          <span>|</span>
+          <a href="javascript:void(0)">EN</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 토글버튼 - 메뉴 -->
+    <label class="toggle_menu" for="toggle_menu"><img src="images/btn_menu.png" alt="메뉴토글버튼" /></label>
+    <!-- 로고 -->
+    <h1 id="logo"><a href="index.html"><img src="images/logo_top.png" alt="동아제약" /></a></h1>
+  </header>
+  <!-- 메인메뉴2 -->
+  <input id="toggle_menu" type="checkbox" />
+  <nav id="main_nav_2">
+    <h2 class="blind">메인메뉴</h2>
+    <label class="btn_close" for="toggle_menu"><img src="images/btn_close.png" alt="메뉴닫기" /></label>
+    <ul>
+      <li class="active"><a href="dongA_info.html">동아제약</a></li>
+      <li><a href="javascript:void(0)">제품소개</a></li>
+      <li><a href="javascript:void(0)">제품개발</a></li>
+      <li><a href="javascript:void(0)">사회공헌</a></li>
+      <li><a href="javascript:void(0)">고객지원</a></li>
+      <li><a href="javascript:void(0)">홍보</a></li>
+      <li><a href="javascript:void(0)">사이버감사실</a></li>
+    </ul>
+    <div id="language2">
+      <a href="javascript:void(0)">KR</a>
+      <span>|</span>
+      <a href="javascript:void(0)">EN</a>
+    </div>
+    <div class="menu_bg"></div>
+  </nav>
+  <script>
+    $(function(){
+      $("#container > div > section > label").click(function(){
+        var value=0;
+        if($("body").outerWidth() > 1366){
+          value=$("#main_nav_1").outerHeight();
+        }else{
+          value=$("#main_header").outerHeight();
+        }
+        value=$(this).parent().offset().top-(value+7);
+        $(window).scrollTop(value);
+      });
+    });
+  </script>
+  <!-- 콘텐츠 영역 -->
+  <div id="container">
+    <div>
+      <h1 class="title">동아제약 소개</h1>
+      <!--[s]소개-->
+      <section id="introduction">
+        <input id="d1" type="checkbox" />
+        <label class="cell_title" for="d1">소개</label>
+        <div class="cell">
+          <figure>
+            <img src="images/img_introduce.jpg" alt="좋은 의약품을 생산해 국민건강에 이바지한다" />
+          </figure>
+          <div class="cell_text">
+            <p>
+              <strong>동아제약</strong>은 소비자들이 처방전 없이 살 수 있는 일반의약품, 의약외품 및 건강기능식품을 주 사업분야로 하고 있습니다. 주요 제품으로는 박카스, 판피린, 써큐란, 가그린, 모닝케어, 템포 등이 있습니다. 동아제약은 창립 당시의 ‘좋은 의약품을 생산하여 국민 건강에 이바지한다’는 창업정신을 그대로 계승해 국내 최고의 헬스케어 전문기업으로 성장해 나갈 것입니다.
+            </p>
+          </div>
+
+          <div class="cell_summary">
+            <ul>
+              <li>대표이사 : 사장 최호진</li>
+              <li>대표번호 : <a href="tel:02-920-8114">02-920-8114</a></li>
+              <li>주소 : 서울시 동대문구 천호대로 64</li>
+              <li>홈페이지 : www.dapharm.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!--[e]소개-->
+
+      <!--[s]CEO 인사말-->
+      <section id="CEOmessage">
+        <input id="d2" type="checkbox" />
+        <label class="cell_title" for="d2">CEO 인사말</label>
+        <div class="cell">
+          <figure>
+            <img src="images/img_ceo_message.png" alt="소비자중심경영을 실천하는 동아제약입니다 대표이사 사장 최호진" />
+          </figure>
+
+          <div class="cell_text">
+            <p class="first">
+              여러분, 안녕하십니까.
+            </p>
+
+            <p>
+              동아제약 홈페이지를 방문해주셔서 감사합니다. <br /><br />
+              좋은 약을 만들어 국민 건강에 이바지한다.’<br />
+              동아제약은 1932년 문을 연 이래 이 창업정신을 바탕으로 국민 곁에서 국민의 건강한 삶을 응원해 왔습니다. <br />
+              박카스, 판피린, 가그린, 써큐란, 템포, 비겐, 모닝케어 등 수많은 제품들이 각 분야를 선도하며 오랫동안 큰 사랑을 받았습니다.<br />
+              특히 대표 제품 박카스는 고단한 하루를 위로하고 더 나은 내일을 격려하는 친구처럼 국민과 50년이 넘는 시간을 함께해 왔습니다. <br />
+              이 자리를 빌려 그동안 동아제약에 보내주신 여러분의 관심과 성원에 진심으로 감사를 드립니다. <br /><br />
+              동아제약은 80여 년간 지켜 온 창업정신을 계승, 발전시키는 것은 물론, 나아가 헬스케어 전문기업으로의 더 큰 도약을 준비하고 있습니다. 
+              그에 앞서 여러분께 세 가지를 약속드립니다. 
+            </p>
+
+            <dl>
+              <dt>첫째, <strong>소비자중심경영</strong>을 실천하겠습니다.</dt>
+
+              <dd>기업이 성장하는 원동력은 바로 고객에게 있습니다.<br />
+              앞으로 고객의 따뜻한 조언, 따끔한 질책도 소중히 생각하며 고객의 소리를 제품에 적극 반영하겠습니다.<br />
+              더불어 고객에게 필요한 제품, 고객이 만족할 수 있는 제품을 만들도록 노력하겠습니다.</dd>
+
+              <dt>둘째, <strong>제품력</strong>을 강화하겠습니다.</dt>
+              <dd>기존 제품은 보완, 개선하여 효능, 효과와 고객 편의를 더욱 높여나가겠습니다. <br />
+              연구, 개발에도 총력을 기울여 국민 건강에 기여할 수 있는 우수한 제품을 꾸준히 개발하겠습니다.</dd>
+
+              <dt>셋째, 기업의 <strong>사회적 책임</strong>을 다하겠습니다.</dt>
+              <dd>동아제약은 그동안 대학생 국토대장정 등을 통해 이 땅의 청년들에게 진정한 도전정신과 배려의 가치를 일깨워 왔습니다.<br />
+              앞으로도 동아제약은 좋은 약을 만드는 것뿐만 아니라 좋은 사회, 건강한 사회를 만드는 데도 앞장서겠습니다.</dd> 
+            </dl>
+
+            <p>
+              동아제약이 여러분이 보내주신 성원에 보답하는 길은 제약기업으로서의 소명을 다하는 것입니다.<br />
+              가정에서 스스로 질병을 예방하고 건강을 지킬 수 있도록 훌륭한 제품을 개발하는 데 온 힘을 다하겠습니다.<br /> 
+              헬스케어 전문기업으로 발전해 나가는 동아제약을 함께 지켜봐주시길 바랍니다.<br /><br />
+              감사합니다. 
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--[e]CEO 인사말-->
+
+      <!--[s]가치 및 비전-->
+      <section id="vision">
+        <input id="d3" type="checkbox" />
+        <label class="cell_title" for="d3">가치 및 비전</label>
+        <div class="cell">
+          <figure>
+            <img src="images/img_vision.png" alt="혁신적 의약품으로 존경 받는 세계적 수준의 기업입니다" />
+          </figure>
+
+          <div class="cell_text">
+            <h2>사시</h2>
+            <p>우리는 사회정의에 따라 기업의 사회적 책임을 다하고, 우수한 의약품을 생산하여 인류의 건강과 복지향상에 이바지한다.</p>
+          </div>
+        </div>
+      </section>
+      <!--[e]가치 및 비전-->
+
+      <!--[s]연혁-->
+      <section id="donga_history">
+        <input id="d4" type="checkbox" />
+        <label class="cell_title" for="d4">연혁</label>
+        <div class="cell">
+          <figure>
+            <img src="images/tit_sv_04.jpg " alt="인류 건강을 위해 힘차게 뛰고 있습니다" />
+          </figure>
+
+          <div class="cell_summary">
+            <ul>
+              <li>창립일 2013년3월1일</li>
+              <li>주식수 600만주</li>
+              <li>자본금 300억원</li>
+              <li>직원수 580명</li>
+            </ul>
+          </div>
+
+          <div id="history_tabbar">
+            <div class="tab_title">
+              <div>
+                <h3 class="active">2010's</h3>
+                <h3>2000's</h3>
+                <h3>1980-1990's</h3>
+                <h3>1930-1970's</h3>
+              </div>
+            </div>
+
+            <section class="description">
+              <div class="active">
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>2017</dt>
+                      <dd><span>11월</span>제1기 동아제약 소비자 패널단 창단식 개최</dd>
+                      <dd><span>11월</span>소비자 맞춤 아이디어 공유 플랫폼 '동아 IF' 오픈</dd>
+                      <dd><span>10월</span>감기약 '판텍큐 연질캡슐' 리뉴얼 출시</dd>
+                      <dd><span>10월</span>한국광고홍보협회와 산학협력 양해각서 체결</dd>
+                      <dd><span>08월</span>템포와 함께하는 '템포 x 투맘쇼' 개최</dd>
+                      <dd><span>07월</span>제20회 동아제약 대학생 국토대장정 및 20주년 기념식 실시</dd>
+                      <dd><span>06월</span>박카스 TV 광고 '딸의 인사' 편 방영</dd>
+                      <dd><span>04월</span>구강청결제 '가그린 라임' 출시</dd>
+                      <dd><span>04월</span>러시아 파머신테즈사와 전략적 파트너십 체결</dd>
+                      <dd><span>03월</span>'동아 덴마크 프로바이오틱스' 발매</dd>
+                      <dd><span>03월</span>박카스, 제25회 '국민이 선택한 좋은 광고상' 수상</dd>
+                      <dd><span>02월</span>약사 대상 '마이보라 심포지엄' 개최</dd>
+                      <dd><span>02월</span>육군 51사단과 업무 협약 MOU 체결</dd>
+                    </dl>
+                    <img src="images/img_history2017.gif" alt="2017년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2016</dt>
+                      <dd><span>12월</span>'2016 가족친화인증' 기업 선정</dd>
+                      <dd><span>12월</span>소비자의 날 '대통령 표창' 수상</dd>
+                      <dd><span>12월</span>4회 연속 CCM(소비자중심경영) 인증 획득</dd>
+                      <dd><span>12월</span>소비자중심경영 우수기업 인증</dd>
+                      <dd><span>12월</span>모닝케어 강황S 출시</dd>
+                      <dd><span>11월</span>‘2016 대한민국 광고 대상’서 3개 부문 수상</dd>
+                      <dd><span>11월</span>육군훈련소와 1사1병영 업무협약 체결</dd>
+                      <dd><span>11월</span>전국 대학생 광고 홍보 공모전 HUAF 후원</dd>
+                      <dd><span>09월</span>잇몸가그린 검가드 출시</dd>
+                      <dd><span>07월</span>‘동아 비타민C 順(순)’ 발매</dd>
+                      <dd><span>06월</span>박카스 ‘국토대장정 스페셜 에디션’ 출시</dd>
+                      <dd><span>05월</span>제20회 국제타우린학회 후원</dd>
+                      <dd><span>04월</span>키자니아 부산에 '가그린 치과' 오픈</dd>
+                      <dd><span>03월</span>안구세정제 아이봉 발매식 개최</dd>
+                      <dd><span>03월</span>약사 대상 'Spring Symposium' 개최</dd>
+                    </dl>
+                    <img src="images/img_history2016.gif" alt="2016년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2015</dt>
+                      <dd><span>12월</span>박카스, 연 매출 2,000억 원 돌파</dd>
+                      <dd><span>12월</span>가그린 핀업 디자인 어워드 동상 수상</dd>
+                      <dd><span>12월</span>달성공장 HACCP 인증 획득</dd>
+                      <dd><span>12월</span>박카스, 연 매출 2,000억 원 돌파</dd>
+                      <dd><span>11월</span>'박카스 유니폼 다지안 공모전 시상식' 개최</dd>
+                      <dd><span>11월</span>모닝케어 강황 발매</dd>
+                      <dd><span>11월</span>모닝케어 발매 10주년 기념식</dd>
+                      <dd><span>11월</span>제29회 약의 날 기념식 환경부장관 표창 수상</dd>
+                      <dd><span>11월</span>2015 대한민국 광고대상 가그린 'TV부문 동상', 박카스 '심사 위원 특별상' 수상</dd>
+                      <dd><span>11월</span>달성공장, HACCP 인증 획득</dd>
+                      <dd><span>10월</span>충청남도 당진시와 MOU 체결</dd>
+                      <dd><span>08월</span>가그린 패키지 리뉴얼 실시</dd>
+                      <dd><span>07월</span>종합소화제 '베나치오 세립' 출시</dd>
+                      <dd><span>06월</span>무좀치료제 '터비뉴겔' 리뉴얼 실시</dd>
+                      <dd><span>05월</span>상처 보호 일회용 밴드 '스킨가드 플러스' 발매</dd>
+                      <dd><span>05월</span>'바이엘 피임약' 4개 제품 인수</dd>
+                      <dd><span>04월</span>렌즈 클리닝 티슈 '안경닦기' 출시</dd>
+                      <dd><span>03월</span>'비겐크림톤 빠른 염색' 발매</dd>
+                      <dd><span>03월</span>박카스, ‘제23회 소비자가 뽑은 좋은 광고상’ 대상 수상</dd>
+                    </dl>
+                    <img src="images/img_history2015.gif" alt="2015년 연혁 관련 이미지 " /> 
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2014</dt>
+                      <dd><span>08월</span>국내 최초 동충하초 건강기능식품 '동충일기' 출시</dd>
+                      <dd><span>02월</span>'해리치 베다셀TM 헤어 프로그램' 출시</dd>
+                    </dl>
+                    <img src="images/img_history2014.gif" alt="2014년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2013</dt>
+                      <dd><span>12월</span>신규 홈페이지, 제10회 웹어워드코리아 최우수상 수상1</dd>
+                      <dd><span>2월</span>'비겐크림톤 리뉴얼' 출시</dd>
+                      <dd><span>11월</span>박카스 광고, 2013대한민국광고대상 금상 수상</dd>
+                      <dd><span>11월</span>'가그린 1회용 스틱형' 출시</dd>
+                      <dd><span>03월</span>박카스 광고, 제21회 소비자가 뽑은 좋은 광고상 수상</dd>
+                      <dd><span>03월</span>지주사 전환으로 동아쏘시오홀딩스, 동아제약, 동아ST로 3사 분할  기존 동아제약은 동아쏘시오홀딩스가 존속</dd>
+                      <dd><span>03월</span>DA-7218 (Tedizolid) 글로벌 ABSSSI 임상 3상 완료</dd>
+                    </dl>
+                    <img src="images/img_history2013.gif" alt="2013년 연혁 관련 이미지 " /> 
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2012</dt>
+                      <dd><span>09월</span>송도 동아메이지 BIO공장 기공식</dd>
+                      <dd><span>09월</span>동아팜텍 코스닥 상장</dd>
+                    </dl>
+                    <img src="images/img_history2012.gif" alt="2012년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2011</dt>
+                      <dd><span>12월</span>자사 개발 3호 신약 천연물 위장관운동촉진제 Motilitone(모티리톤) 출시</dd>
+                      <dd><span>04월</span>100기 신입사원 채용</dd>
+                      <dd><span>02월</span>제약업계 최초 매출 9,000억원 달성</dd>
+                    </dl>
+                    <img src="images/img_history2011.gif" alt="2011년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2010</dt>
+                      <dd><span>09월</span>원료약품업체 삼천리제약 인수하여 ST Pharm으로 사명 변경</dd>
+                      <dd><span>06월</span>GSK(글락소스미스클라인)와 포괄적 사업 협약 체결</dd>
+                    </dl>
+                    <img src="images/img_history2010.gif" alt="2010년 연혁 관련 이미지 " />
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>2009</dt>
+                      <dd><span>11월</span>Zydena(자이데나) 미국 임상 3상 진입</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2007</dt>
+                      <dd><span>02월</span>슈퍼박테리아 타깃 항생제 (Tedizolid) 미국 Trius Therapeutics사에 한국을 제외한 전세계 시장 개발 및 판매권에 대한 라이센싱 계약 체결</dd>
+                    </dl>
+                    <img src="images/img_history2007.gif" alt="2007년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2005</dt>
+                      <dd><span>12월</span>자사 개발 2호 신약 발기부전치료제 Zydena(자이데나) 출시</dd>
+                    </dl>
+                    <img src="images/img_history2005.gif" alt="2005년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2003</dt>
+                      <dd><span>11월</span>강신호 회장 전국경제인연합회 회장 취임</dd>
+                    </dl>
+                    <img src="images/img_history2003.gif" alt="2003년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2002</dt>
+                      <dd>제약업계 최초로 매출 5,000억원 돌파</dd>
+                      <dd><span>12월</span>자사 개발 1호 신약 천연물 위염치료제 Stillen(스티렌) 출시</dd>
+                    </dl>
+                    <img src="images/img_history2002.gif" alt="2002년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>2000</dt>
+                      <dd><span>12월</span>반월공장 BGMP 시설 기준 취득</dd>
+                      <dd><span>01월</span>천안공장 KGMP 취득 및 준공</dd>
+                    </dl>
+                    <img src="images/img_history2000.gif" alt="2000년 연혁 관련 이미지 " />
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>1998</dt>
+                      <dd><span>07월</span>대학생 국토대장정 시작</dd>
+                    </dl>
+                    <img src="images/img_history1998.gif" alt="1998년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1995</dt>
+                      <dd>박카스 매출 1,000억 돌파</dd>
+                    </dl>
+                    <img src="images/img_history1995.gif" alt="1995년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1988</dt>
+                      <dd><span>11월</span>업계 최초 상갈에 최신 KGLP 연구소 준공</dd>
+                    </dl>
+                    <img src="images/img_history1988.gif" alt="1988년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1987</dt>
+                      <dd>수출 1,000만 $ 돌파</dd>
+                      <dd><span>11월</span>국내 최초 AIDS 진단 시약 개발</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1985</dt>
+                      <dd><span>04월</span>업계최초 KGMP 업체1호 지정</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1983</dt>
+                      <dd><span>02월</span>반월에 효소, 원료 합성 공장 준공</dd>
+                    </dl>
+                    <img src="images/img_history1983.gif" alt="1983년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1981</dt>
+                      <dd><span>07월</span>박카스D 미국 첫 수출</dd>
+                    </dl>
+                    <img src="images/img_history1981.gif" alt="1981년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1980</dt>
+                      <dd><span>05월</span>국내 최초로 안양에 GMP 공장 건립</dd>
+                    </dl>
+                    <img src="images/img_history1980.gif" alt="1980년 연혁 관련 이미지 " />
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>1979</dt>
+                      <dd><span>08월</span>최신 반합성 페니실린 계열의 탈암피실린 합성 성공</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1977</dt>
+                      <dd><span>07월</span>연구소 발족</dd>
+                    </dl>
+                    <img src="images/img_history1977.gif" alt="1977년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1970</dt>
+                      <dd><span>02월</span>주식을 공개, 자본금을 7억 5천만원으로 증자</dd>
+                    </dl>
+                    <img src="images/img_history1970.gif" alt="1970년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1967
+                      <dd>매출액, 국내 제약업계 1위 부상</dd>
+                    </dl>
+                    <img src="images/img_history1967.gif" alt="1967년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1963</dt>
+                      <dd><span>08월</span>종합 자양강장제 박카스D 생산</dd>
+                    </dl>
+                    <img src="images/img_history1963.gif" alt="1963년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1960</dt>
+                      <dd>광범위항생제 가나마이신을 생산</dd>
+                    </dl>
+                    <img src="images/img_history1960.gif" alt="1960년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1959</dt>
+                      <dd><span>09월</span>사원 공개채용 실시</dd>
+                    </dl>
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1958</dt>
+                      <dd>서울시 동대문구 용두동에 현대식 공장과 사무실을 준공</dd>
+                    </dl>
+                    <img src="images/img_history1958.gif" alt="1958년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1949</dt>
+                      <dd><span>08월</span>동아제약주식회사로 사명을 변경</dd>
+                    </dl>
+                    <img src="images/img_history1949.gif" alt="1949년 연혁 관련 이미지 " />
+                  </li>
+
+                  <li>
+                    <dl>
+                      <dt>1932</dt>
+                      <dd><span>12월</span>서울시 종로구 중학동에서 의약품 및 위생재료 도매업으로 창업</dd>
+                    </dl>
+                    <img src="images/img_history1932.gif" alt="1932년 연혁 관련 이미지 " />
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!--[e]연혁-->
+
+      <!--[s]CI 소개-->
+      <section id="CIinfo">
+        <input id="d5" type="checkbox" />
+        <label class="cell_title" for="d5">CI 소개</label>
+        <div class="cell">
+          <figure>
+            <img src="images/tit_sv_05.jpg" alt="동아쏘시오그룹의 무궁한 발전을 상징합니다." />
+          </figure>
+
+          <div class="cell_ci">
+            <h3 class="ci_title">동아쏘시오그룹의 <strong>‘피닉스’ 심볼</strong></h3>
+            <div class="co_symbol">
+              <img src="images/bg_symbol.gif" alt="심볼" />
+
+              <p>
+                디자인 모티브는 <strong>불사조의 불멸성과 힘차게 비상하는 날개를 컨셉</strong>으로 무궁한 발전을 나타냅니다.
+              </p>
+              <ul>
+                <li><span>첫째,</span> 영원한 마음가짐으로 고객의 건강과 행복을 위하여 서비스하는 불변의 동아인을 상징합니다.</li>
+                <li><span>둘째,</span> 언제나 새로운 연구와 개발로 우수의약품을 생산하여 인류질병 퇴치에 앞장서는 진취적인 기업으로서의 참모습을 표현합니다.</li>
+                <li><span>셋째,</span> 모든 동아인은 동료로서의 믿음과 우호를 함께 나누며 모든 관련기업과도 협동을 바탕으로 신의를 지켜 사회발전에 일익을 담당한다는 다짐을 나타냅니다.</li>
+              </ul>
+            </div>
+
+            <h3 class="ci_title">CI로고타입</h3>
+            <div class="co_type">
+              <ul>
+                <li>
+                  <img src="images/img_logo_type01.png" alt="국문 로고 이미지 " />
+                  <span>국문</span>
+                </li>
+                <li>
+                  <img src="images/img_logo_type02.png" alt="한문 로고 이미지 " />
+                  <span>한문</span>
+                </li>
+                <li>
+                  <img src="images/img_logo_type03.png" alt="영문 로고 이미지 " />
+                  <span>영문</span>
+                </li>
+              </ul>
+            </div>
+
+            <h3 class="ci_title">시그니처</h3>
+            <div class="co_signature ">
+              <img src="images/bg_signature.gif" alt="시그니쳐 이미지 " />
+              <p>시그니처의 비례 또는 간격을 임으로 변경해서는 안됩니다</p>
+            </div>
+
+            <h3 class="ci_title">컬러시스템</h3>
+            <div class="co_system ">
+              <img src="images/img_system.gif" alt="컬러시스템 안내 이미지" />
+              <p>
+                심볼의 색은 모든 매체를 통하여 동아쏘시오그룹의 코퍼레이트 컬러인 동아블루의 사용을 원칙으로 하며 흑백 매체인 경우에는 블랙으로 적용할 수도 있습니다.<br /><br />
+                또한 시각적으로 특수한 효과를 필요로 할 경우에는 금색과 은색을 적용할 수도 있습니다.
+              </p>
+            </div>
+
+            <h3 class="ci_title">사용금지규정</h3>
+            <div class="co_info ">
+              <img src="images/img_system.gif" alt="forbid_pharm.jpg" alt="사용금지규정에 관한 이미지" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--[e]소개-->
+
+      <!--[s]위치-->
+      <section id="locationInfo">
+        <input id="d6" type="checkbox" />
+        <label class="cell_title" for="d6">위치</label>
+        <div class="cell">
+          <figure>
+            <img src="images/tit_sv_06.jpg" alt="" />
+          </figure>
+
+          <div id="location_tabbar">
+            <div class="tab_title">
+              <div>
+                <h3 class="active">본사</h3>
+                <h3>공장</h3>
+                <h3>지점</h3>
+              </div>
+            </div>
+            <section class="description">
+              <div class="active">
+                <h3 class="location_title">본사</h3>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>서울특별시 동대문구 천호대로 64</dd>
+                  <dt class="m_l_100">전화</dt>
+                  <dd><a href="tel:02-920-8114">02-920-8114</a></dd>
+                </dl>
+                <dl>
+                  <dt>교통편</dt>
+                  <dd>지하철 2호선 신설동역 9번 출구 도보 10분 거리 지하철 1호선 신설동역 6번 출구</dd>
+                </dl>
+                <img src="images/map01.jpg" alt="동아제약 2호선 신설동역 9번출구로 나와 시립동부병원 앞 사거리 방면 동진교를 건너 첫번째 블럭 도보 10분 거리 " />
+              </div>
+
+              <div>
+                <h3 class="location_title">천안공장</h3>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>충청남도 천안시 서북구 백석공단1로 200-23</dd>
+                </dl>
+                <dl>
+                  <dt>전화번호</dt>
+                  <dd><a href="tel:041-621-1500">041-621-1500</a></dd>
+                </dl>
+                <img src="images/map02.jpg" alt="천안공장 충청남도 천안시 서북구 백석공단1로 200-23 " />
+
+                <h3 class="location_title">이천공장</h3>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>경기도 이천시 경충대로 2946번길 61</dd>
+                </dl>
+                <dl>
+                  <dt>전화번호</dt>
+                  <dd><a href="tel:031-644-2800">031-644-2800</a></dd>
+                </dl>
+                <img src="images/map03.jpg" alt="경기도 이천시 경충대로 2946번길 61" />
+
+                <h3 class="location_title">달성공장</h3>
+                <dl>
+                  <dt>주소</dt>
+                  <dd>대구광역시 달성군 논공읍 논공로 493</dd>
+                </dl>
+                <dl>
+                  <dt>전화번호</dt>
+                  <dd><a href="tel:053-610-0600">053-610-0600</a></dd>
+                </dl>
+                <img src="images/map04.jpg" alt="대구광역시 달성군 논공읍 논공로 493 " /> 
+              </div>
+
+              <div>
+                <h3 class="location_title">지점</h3>
+                <ul>
+                  <li>
+                    <dl>
+                      <dt>약국1,2 지점(서울)</dt>
+                      <dd class="address">서울특별시 동대문구 무학로 25길</dd>
+                      <dd class="tel"><a href="tel:1602-920-8600">1602-920-8600, 8460</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>약국3지점 (안양)</dt>
+                      <dd class="address">경기도 안양시 만안구 안양로 552</dd>
+                      <dd class="tel"><a href="tel:070-8636-3069">070-8636-3069</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>약국4지점 (일산)</dt>
+                      <dd class="address">경기도 고양시 일산동구 경의로 25-38</dd>
+                      <dd class="tel"><a href="tel:070-8636-3606">070-8636-3606</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>부산지점 (부산)</dt>
+                      <dd class="address">부산광역시 연제구 거제천로 270번길 16</dd>
+                      <dd class="tel"><a href="tel:051-804-1202">051-804-1202</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>부산지점 3팀 (제주)</dt>
+                      <dd class="address">제주시 아라2동1545-1</dd>
+                      <dd class="tel"><a href="tel:064-746-5273">064-746-5273</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>대구지점 (대구)</dt>
+                      <dd class="address">대구광역시 동구 동부로 22길 34</dd>
+                      <dd class="tel"><a href="tel:053-743-7511">053-743-7511</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>중부지점 1팀 (대전)</dt>
+                      <dd class="address">대전광역시시 중구 어덕마을로 18</dd>
+                      <dd class="tel"><a href="tel:042-253-6001">042-253-6001</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>중부지점 2팀 (천안)</dt>
+                      <dd class="address">충청남도 천안시 서북구 불당동 1535-1마블러스 T타워 512호</dd>
+                      <dd class="tel"><a href="tel:041-562-2202">041-562-2202 </a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>경주사업소 (경주)</dt>
+                      <dd class="address">경상북도 경주시 공단로 41</dd>
+                      <dd class="tel"><a href="tel:054-776-3311">054-776-3311</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>호남지점 1팀 (광주)</dt>
+                      <dd class="address">광주광역시 북구 하서로322번길 24-8</dd>
+                      <dd class="tel"><a href="tel:062-571-2341">062-571-2341</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>호남지점 2팀 (전주)</dt>
+                      <dd class="address">전라북도 전주시 덕진구 유상로 44</dd>
+                      <dd class="tel"><a href="tel:063-212-9981">063-212-9981</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>동부지점 1팀 (원주)</dt>
+                      <dd class="address">강원도 원주시 행가리1길 42-1</dd>
+                      <dd class="tel"><a href="tel:033-766-1420">033-766-1420</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>동부지점 2팀 (강릉)</dt>
+                      <dd class="address">강원도 강릉시 교1동 940-1</dd>
+                      <dd class="tel"><a href="tel:033-647-9892">033-647-9892</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>동부지점 3팀 (안동)</dt>
+                      <dd class="address">경상북도 안동시 공단로 48</dd>
+                      <dd class="tel"><a href="tel:054-859-7811">054-859-7811</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>창원사업소 (마산)</dt>
+                      <dd class="address">경상남도 창원시 마산회원구 내서읍 중리공단로 187</dd>
+                      <dd class="tel"><a href="tel:070-8636-3300">070-8636-3300</a></dd>
+                      <dd class="view"><a href="javascript:void(0)">상세위치보기</a></dd>
+                    </dl>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <!--[e]위치-->
+    </div>
+  </div>
+
+  <!-- 푸터영역 -->
+  <footer id="main_footer">
+    <div id="family_site">
+      <h3 class="f_title">Family Site </h3>
+      <ul>
+        <li>
+          <dl>
+            <dt>지주회사</dt>
+            <dd><a href="javascript:void(0)">동아쏘시오홀딩스</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>식음료</dt>
+            <dd><a href="javascript:void(0)">동아오츠카</a></dd>
+            <dd><a href="javascript:void(0)">동천수</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>제약</dt>
+            <dd><a href="javascript:void(0)">동아ST</a></dd>
+            <dd><a href="javascript:void(0)">동아제약</a></dd>
+            <dd><a href="javascript:void(0)">에스티팜</a></dd>
+            <dd><a href="javascript:void(0)">DMB</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>물류</dt>
+            <dd><a href="javascript:void(0)">용마로지스</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>병유리</dt>
+            <dd><a href="javascript:void(0)">수석</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>기계부품</dt>
+            <dd><a href="javascript:void(0)">한국신동공업</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>정보통신</dt>
+            <dd><a href="javascript:void(0)">DA인포메이션</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>건설</dt>
+            <dd><a href="javascript:void(0)">철근종합건설</a></dd>
+          </dl>
+        </li>
+        <li>
+          <dl>
+            <dt>해외</dt>
+            <dd><a href="javascript:void(0)">Dong-A America Co.</a></dd>
+            <dd><a href="javascript:void(0)">소주동아음료유한공사</a></dd>
+            <dd><a href="javascript:void(0)">Dong-A Participacoes Ltda</a></dd>
+          </dl>
+        </li>
+      </ul>
+    </div>
+
+    <div id="brand_site">
+      <h3 class="f_title">Brand Site</h3>
+      <ul>
+        <li><a href="javascript:void(0)">가그린</a></li>
+        <li><a href="javascript:void(0)">박카스</a></li>
+        <li><a href="javascript:void(0)">모닝케어</a></li>
+        <li><a href="javascript:void(0)">써큐란</a></li>
+        <li><a href="javascript:void(0)">템포</a></li>
+        <li><a href="javascript:void(0)">비겐크림톤</a></li>
+        <li><a href="javascript:void(0)">국토대장정</a></li>
+        <li><a href="javascript:void(0)">환경생명교실</a></li>
+        <li><a href="javascript:void(0)">AD CAFE</a></li>
+      </ul>
+    </div>
+
+    <div id="policy">
+      <ul>
+        <li><a href="javascript:void(0)">개인정보취급방침</a></li>
+        <li><a href="javascript:void(0)">인재개발원</a></li>
+      </ul>
+    </div>
+
+    <div id="f_bottom">
+      <h1 id="f_logo">
+        <img src="images/logo_footer.png" alt="동아제약" />
+      </h1>
+      <address>
+        <span>서울시 동대문구 천호대로 64 TEL.<a href="tel:02-920-8112">02-920-8112</a></span>
+        <span>Copytight DONG-A PHARM. All rights reserved </span>
+      </address>
+      <div id="wa"><a href="#" target="_blank"><img src="images/award.jpg" alt="WEB AWARD" /></a></div>
+    </div>
+
+  </footer>
+
+</body>
+</html>

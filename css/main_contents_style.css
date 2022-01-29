@@ -1,0 +1,349 @@
+/* main_contents_style.css */
+#container{
+  width: 100%;
+}
+  #container > div{
+    width: 100%;
+  }/* 비주얼이미지 */
+  #container > section{
+    width: 100%;
+  }/* 비주얼이미지 제외 나머지 */
+
+  /**** 동아제약 비주얼이미지 ****/
+  #visual_image{
+    background-position: center;
+    position: relative;
+  }
+  @media screen and ( min-width: 1367px){
+  #visual_image{
+    background-image: url(../images/donga.jpg);
+    height: 700px;
+  }
+  }
+  @media screen and ( min-width: 768px) and ( max-width: 1366px){
+  #visual_image{
+    background-image: url(../images/donga_t.jpg);
+    height: 560px;
+  }
+  }
+  @media screen and ( max-width: 767px){
+  #visual_image{
+    background-image: url(../images/donga_m.jpg);
+    height: 420px;
+  }
+  }
+
+    /** 자세히 보기 **/
+    a.more{
+      width: 300px; height: 70px;
+      box-sizing: border-box;
+      border: 1px solid #fff;
+      padding-left: 30px; line-height: 70px;
+      font-size: 19px;
+      text-decoration: none;
+      background: url(../images/arrow_white.png) no-repeat 233px 50%;
+    }
+    #visual_image > a.more{
+      color: #fff;
+      position: absolute;
+      left: 50%; bottom: 73px;
+      margin-left: -150px;
+    }
+    @media screen and ( min-width: 768px) and ( max-width: 1366px){
+    #visual_image > a.more{ bottom: 50px;}
+    }
+    @media screen and ( max-width: 767px){
+    #visual_image > a.more{ bottom: 40px;}
+    }
+
+    @media screen and ( min-width: 1367px){
+    #visual_image > a.more:hover{
+      background-image: url(../images/arrow_black.png);
+      background-color: #fff;
+      color: #000;
+    }
+    }
+  /**** 제품소개 ****/
+  #product{
+    background-color: #fff;
+    padding-top: 87px;
+    padding-bottom: 130px;
+  }
+  @media screen and ( max-width: 1366px){
+  #product{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  }
+    h2.title{
+      width: 100%;
+      font-weight: 700;
+      font-size: 1.7em;
+      text-align: center;
+      color: #00a0c9;
+    }
+    #product > h2.title{
+      margin-bottom: 76px;
+    }
+    @media screen and ( max-width: 1366px){
+    #product > h2.title{
+      margin-bottom: 40px;
+    }
+    }
+    #product > figure,
+    #product > figure > img,
+    #product > ul{
+      width: 1522px;
+      margin: 0 auto;
+    }
+    @media screen and ( max-width: 1521px){
+    #product > figure{
+      width: 100%;
+      box-sizing: border-box;
+    }
+    #product > figure > img,
+    #product > ul{
+      width: 100%;
+    }
+    }
+
+    #product > ul{
+      margin-top: 68px;
+      margin-bottom: 60px;
+      overflow: hidden;
+    }
+    @media screen and ( max-width: 1366px){
+    #product > ul{
+      margin-top: 10px;
+    }
+    }
+      #product > ul > li{
+        float: left;
+        margin-bottom: 40px;
+        margin-right: 41px;
+      }
+      #product > ul > li:nth-of-type(3n){
+        margin-right: 0;
+      }
+
+      @media screen and ( min-width: 1522px){
+      #product > ul > li{
+        width: 480px;
+        background-size: 100% 100%;
+        overflow: hidden;
+      }
+      #product > ul > li:nth-of-type(1){
+        background-image: url(../images/bg_bacchusd_web.jpg);
+      }
+      #product > ul > li:nth-of-type(2){
+        background-image: url(../images/bg_bacchusf_web.jpg);
+      }
+      #product > ul > li:nth-of-type(3){
+        background-image: url(../images/bg_bacchusdc_web.jpg);
+      }
+          #product > ul > li:nth-of-type(1) > a > img,
+          #product > ul > li:nth-of-type(2) > a > img,
+          #product > ul > li:nth-of-type(3) > a > img{
+            opacity: 1;
+            transition-duration: 0.3s;
+          }
+          #product > ul > li:nth-of-type(1):hover > a > img,
+          #product > ul > li:nth-of-type(2):hover > a > img,
+          #product > ul > li:nth-of-type(3):hover > a > img{
+            opacity: 0;
+          }
+          #product > ul > li:nth-of-type(4) > a > img,
+          #product > ul > li:nth-of-type(5) > a > img,
+          #product > ul > li:nth-of-type(6) > a > img{
+            transform: scale(1);
+            transition-duration: 0.3s;
+          }
+          #product > ul > li:nth-of-type(4):hover > a > img,
+          #product > ul > li:nth-of-type(5):hover > a > img,
+          #product > ul > li:nth-of-type(6):hover > a > img{
+            transform: scale(1.2);
+          }
+      }
+      @media screen and ( max-width:1521px){
+      #product > ul > li{
+        width: 33.33%;
+        box-sizing: border-box;
+        margin-right: 0;
+        padding: 0 10px;
+        margin-bottom: 20px
+      }
+      }
+      @media screen and ( max-width: 767px){
+      #product > ul > li{
+        width: 50%;
+      }
+      }
+        #product > ul > li > a,
+        #product > ul > li > a > img{
+          width: 100%;
+        }
+    #product > a.more{
+      background-image: url(../images/arrow_black.png);
+      border-color: #000;
+      color: #000;
+      margin: 0 auto;
+    }
+    @media screen and ( min-width: 1367px){
+    #product > a.more:hover{
+      background-image: url(../images/arrow_white.png);
+      background-color: #000;
+      color: #fff;
+    }
+    }
+  /**** 사회공헌 ****/
+  #social{
+    margin-bottom: 60px;
+  }
+    #social > h2.title{ position: relative;}
+    #social > img{ width: 100%;}
+    @media screen and ( min-width: 1367px){
+    #social > h2.title{
+      height: 180px;
+      line-height: 180px;
+    }
+    #social > img.pc{ 
+      display: block;
+      margin-top: -180px;
+    }
+    #social > img.tablet{ display: none;}
+    #social > img.smart{ display: none;}
+    }
+    @media screen and ( min-width: 768px) and ( max-width: 1366px){
+    #social > h2.title{
+      height: 70px;
+      line-height: 70px;
+    }
+    #social > img.pc{ display: none;}
+    #social > img.tablet{
+      display: block;
+      margin-top: -70px;
+    }
+    #social > img.smart{ display: none;}
+    }
+    @media screen and ( max-width: 767px){
+    #social > h2.title{
+      height: 60px;
+      line-height: 60px;
+    }
+    #social > img.pc{ display: none;}
+    #social > img.tablet{ display: none;}
+    #social > img.smart{
+      margin-top: -60px;
+      display: block;
+    }
+    }
+  /**** 역사관 ****/
+  @media screen and ( min-width: 1367px){
+  #history{
+    padding-top: 60px;
+  }
+  }
+    #history > h2.title{
+      font-size: 1.7em;
+      letter-spacing: 3px;
+      line-height: 80px;
+    }
+    #history > hgroup{
+      text-align: center;
+      margin-bottom: 19px;
+    }
+      #history > hgroup > h2{
+        font-size: 18px;
+        color: #494949;
+        font-weight: 700;
+        letter-spacing: -1px;
+        line-height: 62px;
+      }
+      #history > hgroup > h1{
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 75px;
+      }
+      #history > hgroup > p{
+        font-size: 16px;
+        color: #494949;
+        font-weight: 700;
+        line-height: 40px;
+      }
+      @media screen and ( max-width: 767px){
+        #history > h2.title{
+          line-height: 30px;
+          margin-top: 20px; 
+        }
+        #history > hgroup > h1{
+          line-height: 50px;
+          margin-bottom: 20px;
+        }
+        #history > hgroup > h2,
+        #history > hgroup > p{ display: none;}
+      }
+    /** 국토대장정 포스터 스타일적용**/
+    /**
+      포스터 하나당 크기 169x235  
+      margin 하나당 3px  
+      169+3+3=175
+
+      pc  175x5  tablet 175x3  smart 175x1
+    **/
+    #poster{
+      height: 235px;
+      position: relative; /* 이전이후 버튼의 기준 */
+      padding-bottom: 117px;
+    }
+      #poster .imgs_wrap{
+        overflow: hidden;
+        height: 235px;
+        position: relative; /* 포트터 이미지 묶음의 기준 */
+        margin: 0 auto;
+      }
+      @media screen and ( min-width: 1367px){
+      #poster .imgs_wrap{ width: 875px;}
+      }
+      @media screen and ( min-width: 768px) and ( max-width: 1366px){
+      #poster .imgs_wrap{ width: 525px;}
+      }
+      @media screen and ( max-width: 767px){
+      #poster .imgs_wrap{ width: 175px;}
+      }
+        #poster .imgs_wrap > ul{
+          width: 3325px; height: 235px;
+          position: absolute;
+          left: 0; top: 0;
+          transition-duration: 0.3s;
+        }
+          #poster .imgs_wrap > ul > li{
+            float: left;
+            width: 169px; height: 235px;
+            padding: 0 3px;
+          }
+      #poster .btn_next,
+      #poster .btn_prev{
+        width: 20px; height: 28px;
+        position: absolute;
+        top: 104px;
+      }
+      #poster .btn_next{
+        right: 50%;
+        background: url(../images/btn_next_a.png);
+      }
+      #poster .btn_prev{
+        left: 50%;
+        background: url(../images/btn_prev_n.png);
+      }
+      @media screen and ( min-width: 1367px){
+      #poster .btn_next{ margin-right: -478px;}
+      #poster .btn_prev{ margin-left: -478px;}
+      }
+      @media screen and ( min-width: 768px) and ( max-width: 1367px){
+      #poster .btn_next{ margin-right: -303px;}
+      #poster .btn_prev{ margin-left: -303px;}
+      }
+      @media screen and ( max-width: 767px){
+      #poster .btn_next{ margin-right: -128px;}
+      #poster .btn_prev{ margin-left: -128px;}
+      }
