@@ -104,4 +104,59 @@ KakaoTalk -
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 ```
 
-## media 속성
+## CSS 미디어쿼리(Media Query)
+
+1. 기본 사용법
+
+```css
+@media (조건문) { 실행코드 }
+```
+
+```html
+<link rel="stylesheet" media="all and (조건)" href="desktop.css" >
+```
+
+- `<link>`를 사용하는 방법은 용량이 커지기 때문에 권장하지 않는다.
+
+<br />
+
+2. 모바일우선 - min-width 사용 (최소 ~ 부터 적용)
+
+- 작은 가로폭부터 큰 가로폭 순서로 만드는 방법
+
+```css
+/* 기본으로 작성되는 CSS는 576px보다 작은 화면에서 작동 된다. */
+/* 가로모드 모바일 디바이스 (가로 해상도가 576px 보다 큰 화면에 적용) */
+
+@media (min-width: 576px) { ... } 
+ 
+/* 태블릿 디바이스 (가로 해상도가 768px 보다 큰 화면에 적용) */
+@media (min-width: 768px) { ... } 
+ 
+/* 테스크탑 (가로 해상도가 992px 보다 큰 화면에 적용) */
+@media (min-width: 992px) { ... } 
+ 
+/* 큰화면 데스크탑 (가로 해상도가 1200px 보다 큰 화면에 적용) */
+@media (min-width: 1200px) { ... }
+```
+
+<br />
+
+3. 데스트탑우선 - max-width 사용 (최대 ~ 까지 적용)
+
+- 큰 가로폭부터 작은 가로폭 순서로 만드는 것
+
+```css
+/* 기본으로 작성되는 CSS는 1199px보다 큰 화면에서 작동 된다. */
+/* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
+@media (max-width: 575px) { ... } 
+ 
+// 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) 
+@media (max-width: 767px) { ... } 
+ 
+// 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) 
+@media (max-width: 991px) { ... } 
+ 
+// 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용)
+@media (max-width: 1199px) { ... } 
+```
