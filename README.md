@@ -151,12 +151,64 @@ KakaoTalk -
 /* 세로모드 모바일 디바이스 (가로 해상도가 576px 보다 작은 화면에 적용) */
 @media (max-width: 575px) { ... } 
  
-// 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) 
+/* 가로모드 모바일 디바이스 (가로 해상도가 768px 보다 작은 화면에 적용) */
 @media (max-width: 767px) { ... } 
  
-// 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) 
+/* 태블릿 디바이스 (가로 해상도가 992px 보다 작은 화면에 적용) */
 @media (max-width: 991px) { ... } 
  
-// 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용)
+/* 테스크탑 (가로 해상도가 1200px 보다 작은 화면에 적용) */
 @media (max-width: 1199px) { ... } 
+```
+
+## 상단 메뉴 scroll 효과
+
+상단메뉴가 스크롤시 드롭다운 되어 화면 상단에 위치하도록 하는 효과
+
+스크롤 전 화면 -
+
+![스크롤 전 화면](https://raw.githubusercontent.com/jiisunny/donga-responsive/master/_assets/scroll_01.png)
+
+스크롤 후 화면 -
+
+![스크롤 후 화면](https://raw.githubusercontent.com/jiisunny/donga-responsive/master/_assets/scroll_02.png)
+
+```html
+<nav id="main_nav_1">
+  <ul>
+    <li class="active"><a href="donga_info.html">동아제약 소개</a></li>
+    <li><a href="javascript:void(0)">제품소개</a></li>
+    <li><a href="javascript:void(0)">제품개발</a></li>
+    <li><a href="javascript:void(0)">사회공헌</a></li>
+    <li><a href="javascript:void(0)">고객지원</a></li>
+    <li><a href="javascript:void(0)">홍보</a></li>
+    <li><a href="javascript:void(0)">사이버감사실</a></li>
+  </ul>
+</nav>
+```
+
+```css
+#main_nav_1{
+  width: 100%; height: 70px;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+  position: fixed;
+  left: 0; top: -80px;
+  z-index: 80;
+  transition-duration: 0.5s;
+}
+```
+
+```js
+<script>
+$(function () {
+  setInterval(function(){
+    if($(window).scrollTop()>=95){
+      $("#main_nav_1").css({top: 0+"px"});
+    }else{
+      $("#main_nav_1").css({top: -80+"px"});
+    }
+  },50);
+});
+</script>
 ```
